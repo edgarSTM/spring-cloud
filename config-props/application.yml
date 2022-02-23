@@ -1,0 +1,27 @@
+#Application Configuration
+server:
+  port: 8092
+
+  # ===============================
+  # DB
+  # ===============================
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mycrud?serverTimezone=UTC
+    username: root
+    password: root.01
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: my-customer-service
+
+  # ===============================
+  # JPA / HIBERNATE
+  # ===============================
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+
+
